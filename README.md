@@ -46,3 +46,14 @@ To see the intermediate progress, uncomment the part mentioned in panaroma_stitc
 
 (the intermediate images will be saved in the same directory in BGR format)
 The parameters for RANSAC Algorithm in inbuilt fundamental matrix function is set for the default values.
+
+**References:**
+For Fundamental Matrix: Class Notes
+
+For RANSAC Algorithm: Class Notes
+https://engineering.purdue.edu/kak/courses-i-teach/ECE661.08/solution/hw4_s1.pdf
+
+For inbuilt Fundamental Matrix Function: Open CV Documentation
+https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#Mat%20
+findFundamentalMat(InputArray%20points1,%20InputArray%20points2,%20int%20method,%20double%20par
+am1,%20double%20param2,%20OutputArray%20mask)
