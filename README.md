@@ -29,3 +29,20 @@ _Step 9_- After getting the source patch with least distance the patch is placed
 4) Input the image patch size (choose in between 3 and 5) for reconstruction.
 5) The code is designed to save the intermediate progress to monitor and the no. of reconstructed patches is displayed at every 100 patches.
 6) Final reconstructed image is saved in the same folder as of the image pair.
+
+Here the Scene-1 is obtained using the 3 channelled (i.e RGB) reference and source patch and at regular size as of image. Due to the time constraint, the size is reduced in remaining scenes and Grayscale patches are used. In Scene-5, the patch size of 5 is used. The similarity metric of Cosine similarity is also used on one of the dataset for my understanding but not mentioned here, but the results were more of similar.
+
+**Note:-**
+The root directory is to be maintained as seen and naming of the images and their folders to be followed in the same fashion.
+
+The resize function is used to downscale the image before considering for the RANSAC Algorthim and for reconstruction purpose due to time constraint. The same can uncommented for regular size reconstruction, but will consume more time.(same is mentioned in the image_reconstruction.py)
+
+The no. of inliers in the ransac.py script can be changed to get the better Fundamental matrix.
+
+The no. of iterations for the RANSAC Algorithm can also be changed as per user requirement.
+
+(Both the above are commented in the code itself)
+To see the intermediate progress, uncomment the part mentioned in panaroma_stitching.py.
+
+(the intermediate images will be saved in the same directory in BGR format)
+The parameters for RANSAC Algorithm in inbuilt fundamental matrix function is set for the default values.
