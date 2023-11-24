@@ -22,13 +22,13 @@ _Step 8_- The similarity is checked using L2 norm (any other method like cosine 
 _Step 9_- After getting the source patch with least distance the patch is placed at the reference co-ordinate in canvas defined.
 
 # Instructions to run code
-
-1) Run test_script.py.
-2) Enter the image pair no. to execute the code on respective set.(we have provided only one set with this repo so go for '1' as input)
-3) The Fundamental matrix in between the pair of images will be displayed (both for inbuilt function and using my RANSAC function)
-4) Input the image patch size (choose in between 3 and 5) for reconstruction.
-5) The code is designed to save the intermediate progress to monitor and the no. of reconstructed patches is displayed at every 100 patches.
-6) Final reconstructed image is saved in the same folder as of the image pair.
+1) Place the image pairs for correspondence in the folder named 'img_pair_1'...
+2) Run test_script.py.
+3) Enter the image pair no. to execute the code on respective set.(we have provided only one set with this repo so go for '1' as input)
+4) The Fundamental matrix in between the pair of images will be displayed (both for inbuilt function and using my RANSAC function)
+5) Input the image patch size (choose in between 3 and 5) for reconstruction.
+6) The code is designed to save the intermediate progress to monitor and the no. of reconstructed patches is displayed at every 100 patches.
+7) Final reconstructed image is saved in the same folder as of the image pair.
 
 Here the Scene-1 is obtained using the 3 channelled (i.e RGB) reference and source patch and at regular size as of image. Due to the time constraint, the size is reduced in remaining scenes and Grayscale patches are used. In Scene-5, the patch size of 5 is used. The similarity metric of Cosine similarity is also used on one of the dataset for my understanding but not mentioned here, but the results were more of similar.
 
